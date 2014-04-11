@@ -25,7 +25,6 @@
                      h['text'] = m[2].trim()
                      results.push( h );
 
-                     console.log( "Link '" + h['link'] + "' has anchor '" + h['text'] + "'");
                  }
              }
          });

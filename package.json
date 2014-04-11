@@ -1,0 +1,20 @@
+{
+  "author": "Steve Kemp (steve@steve.org.uk)",
+  "name": "link_extractor",
+  "description": "A simple module to extract hyperlinks from Javascript strings.",
+  "version": "0.0.2",
+  "keywords": [
+    "links",
+    "href",
+    "anchor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skx/link_extractor.js"
+  },
+  "bugs": {
+    "url": "https://github.com/skx/link_extractor.js/issues"
+  },
+  "license" : "BSD",
+  "main": "link_extractor.js"
+}

@@ -34,6 +34,14 @@ Examples
      result = c.extract( '<p>This is a <a href="http://example.com/">test</a> ... </p>' );
      assert( result.length == 1 )
 
+     //
+     //  Is the single result the correct one?
+     //
+     assert(result[0]['text'] == "test",
+            "The first link has the correct anchor-text" )
+     assert(result[0]['link'] == "href=\"http://example.com/\"",
+            "The first link has the correct URL" )
+
 
 Notes
 -----

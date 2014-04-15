@@ -10,7 +10,9 @@
          // Regexps for different links.
          //
          var regexp = [ /<a([^>]+)>([^<]+)<\/a>/gi,
-                        /\[url=([^\]]+)\]([^\[]+)\[\/url\]/gi ];
+                        /\[url=([^\]]+)\]([^\[]+)\[\/url\]/gi,
+                        /\[link=([^\]]+)\]([^\[]+)\[\/link\]/gi,
+                      ];
 
          regexp.forEach(function(test){
 

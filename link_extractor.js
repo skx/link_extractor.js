@@ -1,3 +1,13 @@
+//
+// Extract links (simple/naive) from Javascript Strings.
+//
+//   *  https://github.com/skx/link_extractor.js
+//
+// Steve
+// --
+//
+
+
 (function ()
  {
      //
@@ -7,19 +17,25 @@
          var results = new Array();
 
          //
-         // Regexps for different links.
+         // Regexps for different linking formats.
          //
          var regexp = [ /<a([^>]+)>([^<]+)<\/a>/gi,
                         /\[url=([^\]]+)\]([^\[]+)\[\/url\]/gi,
                         /\[link=([^\]]+)\]([^\[]+)\[\/link\]/gi,
                       ];
 
+         //
+         //  Look for each regexp in our list.
+         //
          regexp.forEach(function(test){
 
              var m;
 
              while( m = test.exec(text) )
              {
+                 //
+                 //  Add the result to our return values.
+                 //
                  if (m && m[2] )
                  {
                      var h = new Object();

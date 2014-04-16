@@ -19,10 +19,11 @@
          //
          // Regexps for different linking formats.
          //
-         var regexp = [ /<a([^>]+)>([^<]+)<\/a>/gi,
-                        /\[url=([^\]]+)\]([^\[]+)\[\/url\]/gi,
-                        /\[link=([^\]]+)\]([^\[]+)\[\/link\]/gi,
-                      ];
+         var regexp = [
+                 /<a([^>]+)>([^<]+)<\/a>/gi,
+                 /\[url=(.+?)\](.+?)\[\/url\]/gi,
+                 /\[link=(.+?)\](.+?)\[\/link\]/gi,
+         ];
 
          //
          //  Look for each regexp in our list.
@@ -42,7 +43,7 @@
                      h['link'] = m[1].trim()
                      h['text'] = m[2].trim()
                      results.push( h );
-
+                     console.log( "Link : " + h['link'] + " Anchor:" + h['text'] );
                  }
              }
          });

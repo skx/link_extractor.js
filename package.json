@@ -2,7 +2,7 @@
   "author": "Steve Kemp (steve@steve.org.uk)",
   "name": "link_extractor",
   "description": "A simple module to extract hyperlinks from Javascript strings.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "keywords": [
     "links",
     "href",

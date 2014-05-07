@@ -4,7 +4,15 @@ link_extractor
 This is a simple `node.js` module for extracting hyperlinks from javascript
 strings.
 
-It currently understands HTML & BBCode when it comes to parsing.
+It currently understands three different linking strategies:
+
+* HTML Links.
+    * `<a href="http://example.com/">Test</a>`
+* BBCode Links.
+    * `[url=http://example.com/]example[/url]`
+    * `[link=http://example.com/]example[/link]`
+* Links surrounded by [].
+    * `[http://example.com  This is my title]`
 
 
 Installation
